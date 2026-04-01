@@ -128,6 +128,11 @@
       border: none; color: white; font-size: 2rem; cursor: pointer; line-height: 1;
     }
 
+    /* Scale hero phone on small screens */
+    @media (max-width: 640px) {
+      .phone-float .phone-frame { width: 180px; height: 360px; border-radius: 30px; }
+    }
+
     /* Feature row icon */
     .feat-icon {
       width: 52px; height: 52px; border-radius: 16px;
@@ -144,11 +149,11 @@
       <a href="/" class="flex items-center gap-3">
         <span class="text-lg font-extrabold text-white">Smart<span class="text-gold">Daily</span>Apps</span>
       </a>
-      <div class="flex items-center gap-5 text-sm">
-        <a href="/mygoldfolio/" class="text-gold font-bold">MyGoldFolio</a>
-        <a href="/mygoldfolio/feedback/" class="text-gray-400 hover:text-gold transition hidden sm:inline">Feedback</a>
-        <a href="/contact/" class="text-gray-400 hover:text-gold transition hidden sm:inline">Contact</a>
-        <a href="#download" class="bg-gold text-navy font-bold px-4 py-2 rounded-lg hover:bg-amber transition text-sm">Get App</a>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="/mygoldfolio/" class="text-gold font-bold hidden sm:inline">MyGoldFolio</a>
+        <a href="/mygoldfolio/feedback/" class="text-gray-400 hover:text-gold transition hidden md:inline">Feedback</a>
+        <a href="/contact/" class="text-gray-400 hover:text-gold transition hidden md:inline">Contact</a>
+        <a href="#download" class="bg-gold text-navy font-bold px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg hover:bg-amber transition text-xs sm:text-sm whitespace-nowrap">Get App</a>
       </div>
     </div>
   </nav>
@@ -158,7 +163,7 @@
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/g1.png');"></div>
     <div class="absolute inset-0" style="background: rgba(15,15,26,0.78);"></div>
 
-    <div class="relative max-w-5xl mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center gap-12 md:gap-16">
+    <div class="relative max-w-5xl mx-auto px-6 py-12 md:py-28 flex flex-col md:flex-row items-center gap-10 md:gap-16">
 
       <!-- Text column -->
       <div class="flex-1 text-center md:text-left">
@@ -202,8 +207,8 @@
         </div>
       </div>
 
-      <!-- Phone mockup column (hidden on mobile) -->
-      <div class="hidden md:flex flex-col items-center relative" style="min-width:260px;">
+      <!-- Phone mockup column -->
+      <div class="flex flex-col items-center relative" style="min-width:220px;">
         <!-- Radial glow -->
         <div class="phone-glow"></div>
 

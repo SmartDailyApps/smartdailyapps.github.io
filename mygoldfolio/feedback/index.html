@@ -42,21 +42,35 @@
       </p>
     </div>
 
-    <!-- Canny embed -->
-    <div class="bg-navy-light rounded-2xl border border-border/20 overflow-hidden" style="min-height: 600px;">
-      <iframe
-        src="https://smartdailyapps.canny.io/mygoldfolio"
-        style="width: 100%; height: 700px; border: none;"
-        title="MyGoldFolio Feedback Board"
-        loading="lazy"
-      ></iframe>
-    </div>
+    <!-- Feedback options -->
+    <div class="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
 
-    <div class="text-center mt-8">
-      <p class="text-xs text-muted">
-        You can also email feedback directly to
-        <a href="mailto:smartdailyapps@gmail.com" class="text-gold hover:underline">smartdailyapps@gmail.com</a>
-      </p>
+      <!-- Canny board -->
+      <a href="https://smartdailyapps.canny.io/mygoldfolio" target="_blank" rel="noopener noreferrer"
+         class="group block bg-navy-light border border-border/30 rounded-2xl p-8 text-center hover:border-gold/40 transition">
+        <div class="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mx-auto mb-5 text-3xl text-gold group-hover:bg-gold/20 transition">
+          &#9650;
+        </div>
+        <h2 class="text-lg font-bold text-white mb-2">Vote &amp; Request Features</h2>
+        <p class="text-sm text-gray-400 mb-6 leading-relaxed">Browse existing requests, vote on what matters most to you, and submit new ideas. Your votes directly shape the roadmap.</p>
+        <span class="inline-flex items-center gap-2 bg-gold text-navy font-bold px-6 py-2.5 rounded-xl text-sm group-hover:bg-amber transition">
+          Open Feedback Board →
+        </span>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:smartdailyapps@gmail.com?subject=MyGoldFolio%20Feedback"
+         class="group block bg-navy-light border border-border/30 rounded-2xl p-8 text-center hover:border-gold/40 transition">
+        <div class="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mx-auto mb-5 text-3xl text-gold group-hover:bg-gold/20 transition">
+          &#9993;
+        </div>
+        <h2 class="text-lg font-bold text-white mb-2">Email Directly</h2>
+        <p class="text-sm text-gray-400 mb-6 leading-relaxed">Prefer email? Send bug reports, feedback, or anything else directly to the developer. Usually replied to within 24 hours.</p>
+        <span class="inline-flex items-center gap-2 border border-gold/40 text-gold font-bold px-6 py-2.5 rounded-xl text-sm group-hover:bg-gold/10 transition">
+          smartdailyapps@gmail.com
+        </span>
+      </a>
+
     </div>
   </main>
 

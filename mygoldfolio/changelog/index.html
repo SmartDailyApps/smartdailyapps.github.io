@@ -10,6 +10,9 @@
   <meta property="og:image" content="/images/g3.png" />
   <link rel="icon" href="/images/icon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
       theme: {
         extend: {
           colors: {
@@ -25,6 +28,37 @@
   </script>
   <style>body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }</style>
 </head>
+<body class="bg-navy text-gray-200 min-h-screen">
+
+  <nav class="border-b border-border/30 backdrop-blur-sm bg-navy/80 sticky top-0 z-50">
+    <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-lg font-extrabold text-white">Smart<span class="text-gold">Daily</span>Apps</a>
+      <a href="/mygoldfolio/" class="text-sm text-gray-400 hover:text-gold transition">← MyGoldFolio</a>
+    </div>
+  </nav>
+
+  <main class="max-w-3xl mx-auto px-6 py-12">
+    <div class="flex items-center gap-4 mb-10 pb-8 border-b border-border/20">
+      <img src="/images/icon.png" alt="MyGoldFolio" class="w-14 h-14 rounded-xl" />
+      <div>
+        <span class="text-xl font-extrabold text-gold">MyGoldFolio</span>
+        <p class="text-xs text-muted">Gold portfolio tracker for Android</p>
+      </div>
+    </div>
+
+    <h1 class="text-3xl font-black text-white mb-2">Changelog</h1>
+    <p class="text-sm text-muted mb-10">Release notes for every public version of MyGoldFolio</p>
+
+    <div class="bg-navy-light rounded-xl border border-border/20 p-8 text-center">
+      <p class="text-sm text-muted mb-2">No releases yet.</p>
+      <p class="text-xs text-muted/60">The changelog will be updated when MyGoldFolio launches on Google Play.</p>
+    </div>
+
+    <hr class="border-border/20 my-10" />
+    <p class="text-center text-xs text-muted">&copy; 2026 MyGoldFolio · <a href="/mygoldfolio/privacy/" class="text-gold hover:underline">Privacy Policy</a></p>
+  </main>
+</body>
+</html>
 <body class="bg-navy text-gray-200 min-h-screen">
 
   <nav class="border-b border-border/30 backdrop-blur-sm bg-navy/80 sticky top-0 z-50">

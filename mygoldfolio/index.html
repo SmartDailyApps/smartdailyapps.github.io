@@ -147,15 +147,6 @@
     }
     .cta-pulse { animation: pulse-ring 2s ease-out infinite; }
 
-    /* Sticky CTA */
-    #sticky-cta {
-      transition: opacity 0.3s, transform 0.3s;
-      opacity: 0; transform: translateY(10px); pointer-events: none;
-    }
-    #sticky-cta.visible {
-      opacity: 1; transform: translateY(0); pointer-events: auto;
-    }
-
     /* Scale hero phone on small screens */
     @media (max-width: 640px) {
       .phone-float .phone-frame { width: 180px; height: 360px; border-radius: 14px; }
@@ -186,7 +177,9 @@
         <button id="hamburger" aria-label="Open menu" class="md:hidden text-gray-400 hover:text-gold transition p-1">
           <ion-icon id="hamburger-icon" name="menu-outline" style="font-size:22px;"></ion-icon>
         </button>
-        <a href="#download" class="bg-gold text-navy font-bold px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg hover:bg-amber transition text-xs sm:text-sm whitespace-nowrap">Get App</a>
+        <a href="#download" class="bg-gold text-navy font-bold px-4 py-2 rounded-full hover:bg-amber transition text-xs sm:text-sm whitespace-nowrap flex items-center gap-1.5 shadow-lg shadow-gold/20">
+          <ion-icon name="logo-google-playstore" style="font-size:14px;"></ion-icon><span>Get App</span>
+        </a>
       </div>
     </div>
   </nav>
@@ -635,7 +628,7 @@
     <div class="relative max-w-lg mx-auto" data-aos="fade-up">
       <p class="text-xs font-bold tracking-[0.2em] text-gold uppercase mb-4">Download</p>
       <h2 class="text-3xl font-black text-white mb-3">Set It. Forget It.</h2>
-      <p class="text-gray-400 mb-8 max-w-sm mx-auto">Smart gold tracking made simple.</p>
+      <p class="text-gray-400 mb-8 max-w-sm mx-auto">Smart <span class="text-gold">Gold</span> Tracking Made Simple.</p>
       <a href="https://play.google.com/store/apps/details?id=com.mygoldfolio.app"
          target="_blank" rel="noopener noreferrer">
         <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
@@ -709,12 +702,6 @@
     <ion-icon name="arrow-up-outline" style="font-size:18px;display:block;"></ion-icon>
   </button>
 
-  <!-- Sticky CTA -->
-  <a id="sticky-cta" href="#download"
-     class="fixed bottom-5 right-4 z-40 bg-gold text-navy font-bold px-4 py-2.5 rounded-full shadow-lg shadow-gold/30 text-xs sm:text-sm sm:px-5 sm:py-3 sm:right-6 flex items-center gap-2 max-w-[calc(100vw-2rem)]">
-    <ion-icon name="logo-google-playstore"></ion-icon><span>Get App</span>
-  </a>
-
   <!-- Ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -762,28 +749,6 @@
         hamburgerIcon.setAttribute('name', open ? 'menu-outline' : 'close-outline');
       });
     }
-  </script>
-
-  <!-- Sticky CTA JS -->
-  <script>
-    const stickyCta = document.getElementById('sticky-cta');
-    let scrolledEnough = false;
-    let downloadVisible = false;
-
-    function updateStickyCta() {
-      stickyCta.classList.toggle('visible', scrolledEnough && !downloadVisible);
-    }
-
-    window.addEventListener('scroll', () => {
-      scrolledEnough = window.scrollY > 600;
-      updateStickyCta();
-    }, { passive: true });
-
-    const observer = new IntersectionObserver((entries) => {
-      downloadVisible = entries[0].isIntersecting;
-      updateStickyCta();
-    }, { threshold: 0.1 });
-    observer.observe(document.getElementById('download'));
   </script>
 
   <!-- Scroll-to-top JS -->

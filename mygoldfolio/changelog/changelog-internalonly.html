@@ -129,6 +129,79 @@
 
     <div class="version-block">
       <div class="version-header">
+        <span class="version-number">v2.0.4</span>
+        <span class="version-date">April 2026</span>
+      </div>
+      <ul>
+        <li>Network-aware error messages — "No internet connection" instead of exposing internal source names</li>
+        <li>Friendlier alarm permission prompt — amber "One more step" banner inside BG Fetch card + proactive popup when enabling</li>
+        <li>One-time schedules — schedule a single background fetch for a specific date/time, auto-removed after firing</li>
+        <li>Merged settings sections — "DATA &amp; REFRESH" + "NOTIFICATIONS" combined into "DATA &amp; NOTIFICATIONS"</li>
+        <li>Fixed ordinal suffix display (e.g. "1st", "2nd") in schedule labels</li>
+      </ul>
+    </div>
+
+    <div class="version-block">
+      <div class="version-header">
+        <span class="version-number">v2.0.3</span>
+        <span class="version-date">April 2026</span>
+      </div>
+      <ul>
+        <li>Alarm permission guidance — warning banner + "Grant Permission" button when exact alarms denied on Android 12+</li>
+        <li>AlarmPermissionReceiver — auto-reschedules alarms when permission is granted</li>
+        <li>Test alarm button — 2-minute test alarm to verify exact alarm delivery and method used</li>
+        <li>Export fallback — "Save" falls back to share sheet on Samsung/Android 10 where SAF folder access fails</li>
+        <li>Schedule modal fix — "Add" button and time preview no longer clipped on smaller screens (S9+)</li>
+        <li>Price update sheet fix — "Dismiss" button no longer hidden behind Android navigation bar</li>
+        <li>Enhanced diagnostics — exact alarm permission status in App Info, boot receiver logging, BG debug logs</li>
+      </ul>
+    </div>
+
+    <div class="version-block">
+      <div class="version-header">
+        <span class="version-number">v2.0.x</span>
+        <span class="version-date">April 2026</span>
+      </div>
+      <ul>
+        <li>First public release on Google Play Store (closed testing)</li>
+        <li>Background monitoring with WorkManager + exact alarms</li>
+        <li>Smart scenario generator from 30-day price history</li>
+        <li>Break-even, P/L, and tax-free countdown alerts</li>
+        <li>3 price sources with automatic fallback</li>
+        <li>Buy &amp; sell tracking with per-holding sells and CSV export</li>
+        <li>8 currencies, 3 weight units</li>
+        <li>100% offline &amp; private — no accounts, no cloud</li>
+      </ul>
+    </div>
+
+    <div class="version-block">
+      <div class="version-header">
+        <span class="version-number">v1.9.4</span>
+        <span class="version-date">April 2026</span>
+      </div>
+      <ul>
+        <li>Profile picker in DCA Calculator and Sell Simulator</li>
+        <li>Profile picker on Prices screen — live buy/sell rates for any dealer</li>
+        <li>Price trend chart on Prices screen (collapsible)</li>
+        <li>Safe profile deletion — prompts confirmation, auto-reassigns holdings to default</li>
+        <li>Alarm dedup fix — 30-second dedup prevents duplicate BG notification banners</li>
+      </ul>
+    </div>
+
+    <div class="version-block">
+      <div class="version-header">
+        <span class="version-number">v1.9.3</span>
+        <span class="version-date">April 2026</span>
+      </div>
+      <ul>
+        <li>Fix margin persistence — profiles survive app restart</li>
+        <li>Clean backup format — margin profile data included</li>
+        <li>Portfolio CSV export — added margin and cost columns</li>
+      </ul>
+    </div>
+
+    <div class="version-block">
+      <div class="version-header">
         <span class="version-number">v1.9.2</span>
         <span class="version-date">April 2026</span>
       </div>

@@ -59,72 +59,16 @@
     <h1 class="text-3xl font-black text-white mb-2">Changelog</h1>
     <p class="text-sm text-muted mb-10">Release notes for every public version of My<span class="text-gold">Gold</span>Folio</p>
 
-    <!-- v2.0.4 — UX polish, network detection, one-time schedules -->
+    <!-- v2.0.3–2.0.4 — Bug fixes & UX polish -->
     <div class="bg-navy-light/30 border border-border/20 rounded-xl px-5 py-4 mb-6">
       <div class="flex items-baseline justify-between mb-2">
-        <span class="text-sm font-bold text-gray-300">v2.0.4</span>
+        <span class="text-sm font-bold text-gray-300">v2.0.3 – 2.0.4</span>
         <span class="flex items-center gap-2 ml-auto">
           <span class="text-xs font-semibold bg-amber/15 text-amber px-2 py-0.5 rounded-full">APK</span>
           <span class="text-xs text-muted">Apr 2026</span>
         </span>
       </div>
-      <p class="text-xs text-muted leading-relaxed mb-3">Better error messages, proactive permission prompts, one-time schedule support, and merged settings sections.</p>
-      <ul class="space-y-1.5">
-        <li class="flex items-start gap-2 text-xs text-gray-400">
-          <span class="text-mint mt-0.5 flex-shrink-0">✓</span>
-          <span><span class="text-gray-300 font-medium">Network-aware error messages</span> — "No internet connection" instead of exposing internal source names. Source names never shown to users.</span>
-        </li>
-        <li class="flex items-start gap-2 text-xs text-gray-400">
-          <span class="text-mint mt-0.5 flex-shrink-0">✓</span>
-          <span><span class="text-gray-300 font-medium">Friendlier alarm permission prompt</span> — Amber "One more step" banner inside Background Fetch card + proactive popup when enabling. Mentions no battery impact.</span>
-        </li>
-        <li class="flex items-start gap-2 text-xs text-gray-400">
-          <span class="text-mint mt-0.5 flex-shrink-0">✓</span>
-          <span><span class="text-gray-300 font-medium">One-time schedules</span> — Schedule a single background fetch for a specific date and time. Auto-removed after firing.</span>
-        </li>
-        <li class="flex items-start gap-2 text-xs text-gray-400">
-          <span class="text-mint mt-0.5 flex-shrink-0">✓</span>
-          <span><span class="text-gray-300 font-medium">Merged settings sections</span> — "DATA & REFRESH" + "NOTIFICATIONS" combined into "DATA & NOTIFICATIONS" for clearer organization.</span>
-        </li>
-      </ul>
-    </div>
-
-    <!-- v2.0.3 — Bug fixes from device testing -->
-    <div class="bg-navy-light/30 border border-border/20 rounded-xl px-5 py-4 mb-6">
-      <div class="flex items-baseline justify-between mb-2">
-        <span class="text-sm font-bold text-gray-300">v2.0.3</span>
-        <span class="flex items-center gap-2 ml-auto">
-          <span class="text-xs font-semibold bg-amber/15 text-amber px-2 py-0.5 rounded-full">APK</span>
-          <span class="text-xs text-muted">Apr 2026</span>
-        </span>
-      </div>
-      <p class="text-xs text-muted leading-relaxed mb-3">Reliability fixes from S24 Ultra + S9+ device testing. Alarms, exports, and bottom sheets now work correctly across all screen sizes and Android versions.</p>
-      <ul class="space-y-1.5">
-        <li class="flex items-start gap-2 text-xs text-gray-400">
-          <span class="text-mint mt-0.5 flex-shrink-0">✓</span>
-          <span><span class="text-gray-300 font-medium">Alarm permission guidance</span> — Red warning banner + "Grant Permission" button when exact alarms are denied on Android 12+. Auto-reschedules when permission is granted.</span>
-        </li>
-        <li class="flex items-start gap-2 text-xs text-gray-400">
-          <span class="text-mint mt-0.5 flex-shrink-0">✓</span>
-          <span><span class="text-gray-300 font-medium">Test alarm button</span> — Schedule a 2-minute test alarm to verify exact alarm delivery and method used.</span>
-        </li>
-        <li class="flex items-start gap-2 text-xs text-gray-400">
-          <span class="text-mint mt-0.5 flex-shrink-0">✓</span>
-          <span><span class="text-gray-300 font-medium">Export fallback</span> — "Save" gracefully falls back to share sheet on Samsung/Android 10 devices where SAF folder access fails.</span>
-        </li>
-        <li class="flex items-start gap-2 text-xs text-gray-400">
-          <span class="text-mint mt-0.5 flex-shrink-0">✓</span>
-          <span><span class="text-gray-300 font-medium">Schedule modal fix</span> — "Add" button and time preview no longer clipped on smaller screens (S9+).</span>
-        </li>
-        <li class="flex items-start gap-2 text-xs text-gray-400">
-          <span class="text-mint mt-0.5 flex-shrink-0">✓</span>
-          <span><span class="text-gray-300 font-medium">Price update sheet fix</span> — "Dismiss" button no longer hidden behind Android navigation bar.</span>
-        </li>
-        <li class="flex items-start gap-2 text-xs text-gray-400">
-          <span class="text-mint mt-0.5 flex-shrink-0">✓</span>
-          <span><span class="text-gray-300 font-medium">Enhanced diagnostics</span> — Exact alarm permission status in App Info, boot receiver logging, BG debug logs enabled.</span>
-        </li>
-      </ul>
+      <p class="text-xs text-muted leading-relaxed">Bug fixes, device compatibility improvements, and UX polish from real-device testing.</p>
     </div>
 
     <!-- v2.0.x — First official release -->

@@ -129,6 +129,29 @@
 
     <div class="version-block">
       <div class="version-header">
+        <span class="version-number">v2.1.0</span>
+        <span class="version-date">April 2026</span>
+      </div>
+      <ul>
+        <li>Analytics: Firebase Analytics integration (consent-gated, opt-in); lazy require + NativeModules guard — no-ops in Expo Go; all calls wrapped in try/catch</li>
+        <li>Analytics: GDPR-compliant consent sheet shown after onboarding (analyticsConsent null); grant fires setAnalyticsCollectionEnabled(true) + analytics_consent_granted event; deny is permanent no-op</li>
+        <li>Analytics: Privacy section added to Settings with live toggle to withdraw/re-grant consent; setAnalyticsCollectionEnabled called immediately on toggle</li>
+        <li>Analytics: screen view tracking via usePathname() in _layout.tsx; path normalised (/(tabs)/portfolio → portfolio)</li>
+        <li>Analytics: events tracked — holding_added, holding_deleted, sell_recorded, price_alert_created, milestone_alert_created, pnl_watcher_created, price_refreshed, alert_triggered, scenario_run, backup_created, restore_performed, analytics_consent_granted</li>
+        <li>Analytics: trackEvent() helper in goldStore.ts uses lazy require to avoid circular import; conditional flag pattern (let created = false) ensures events fire only when state actually changes</li>
+        <li>Rating prompt: sentiment gate shown after 5+ app opens, 1.5s delay, consent resolved, not rated/never; "Yes" → expo-store-review requestReview(); "Not now" → 14-day cooldown; "Not really" → opens mygoldfolio.de/feedback/</li>
+        <li>Rating prompt: Rate MyGoldFolio button added to Settings (above App Info) and App Info screen</li>
+        <li>Store: version bumped 17→18; 4 new Settings fields: analyticsConsent, ratingPromptStatus, ratingPromptLastShown, appOpenCount</li>
+        <li>Store: appOpenCount incremented once per foreground session via openCountIncremented ref (prevents double-count on re-render)</li>
+        <li>Backup: analyticsConsent, ratingPromptStatus, ratingPromptLastShown, appOpenCount added to STRIP_SETTINGS_KEYS (device-specific, excluded from exports)</li>
+        <li>Deps: @react-native-firebase/app ^21.0.0, @react-native-firebase/analytics ^21.0.0, expo-store-review ~8.0.8</li>
+        <li>app.json: @react-native-firebase/app plugin added; googleServicesFile path set to ./android/app/google-services.json</li>
+        <li>Rating: added Play Store URL fallback (market://details?id=com.mygoldfolio.app → web fallback) when in-app review quota is hit or hasAction() returns false — both RatingPromptSheet and App Info button</li>
+      </ul>
+    </div>
+
+    <div class="version-block">
+      <div class="version-header">
         <span class="version-number">v2.0.6 OTA-2</span>
         <span class="version-date">April 2026</span>
       </div>

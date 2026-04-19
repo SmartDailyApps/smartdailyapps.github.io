@@ -4,95 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Use — SmartDailyApps</title>
-  <meta name="description" content="Terms of Use for SmartDailyApps and the MyGoldFolio Android application." />
-  <link rel="icon" href="/images/icon.png" />
+  <meta name="description" content="Terms of Use for SmartDailyApps products and websites." />
+  <meta property="og:title" content="Terms of Use — SmartDailyApps" />
+  <meta property="og:description" content="Legal terms for using SmartDailyApps products and websites." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/images/sda-v3-og-all.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Terms of Use — SmartDailyApps" />
+  <meta name="twitter:description" content="Legal terms for using SmartDailyApps products and websites." />
+  <meta name="twitter:image" content="/images/sda-v3-og-all.png" />
+  <link rel="icon" href="/images/logo-icon.png" />
   <link rel="canonical" href="https://smartdailyapps.com/terms/" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="alternate" hreflang="en" href="https://smartdailyapps.com/terms/" />
+  <link rel="alternate" hreflang="de" href="https://smartdailyapps.com/de/terms/" />
+  <link rel="alternate" hreflang="tr" href="https://smartdailyapps.com/tr/terms/" />
+  <link rel="alternate" hreflang="fr" href="https://smartdailyapps.com/fr/terms/" />
+  <link rel="alternate" hreflang="x-default" href="https://smartdailyapps.com/terms/" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{colors:{navy:'#0F0F1A','navy-light':'#1A1A2E',border:'#1E3A5C',gold:'#D4A843',muted:'#666677'}}}}</script>
-  <style>body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;}</style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#090C1A',
+            panel: '#131D3D',
+            line: '#2A3565',
+            cyan: '#4DE2FF',
+            muted: '#9AA6C9'
+          },
+          fontFamily: {
+            heading: ['Space Grotesk', 'Inter', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
-<body class="bg-navy text-gray-200 min-h-screen flex flex-col">
-  <nav class="border-b border-border/30 bg-navy/80 sticky top-0 z-50">
-    <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="/" class="text-lg font-extrabold text-white"><span class="text-gold">Smart</span>DailyApps</a>
-      <a href="/" class="text-sm text-gray-400 hover:text-gold transition">← Home</a>
+<body class="bg-ink text-gray-100 min-h-screen flex flex-col">
+  <nav class="sticky top-0 z-40 border-b border-line/50 bg-ink/85 backdrop-blur-sm">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="font-heading font-extrabold tracking-tight text-lg inline-flex items-center gap-2"><img src="/images/logo-icon.png" alt="SmartDailyApps logo" class="w-7 h-7 rounded-lg object-cover" /><span>Smart<span class="bg-gradient-to-r from-[#c6b6ff] via-[#8f73ff] to-[#6a4dff] bg-clip-text text-transparent">Daily</span>Apps</span></a>
+      <a href="/" class="text-sm text-gray-300 hover:text-cyan transition">← Home</a>
     </div>
   </nav>
 
-  <main class="flex-1 max-w-3xl mx-auto px-6 py-12 w-full">
-    <h1 class="text-3xl font-black text-white mb-2">Terms of Use</h1>
-    <p class="text-sm text-muted mb-10">Effective date: 1 April 2026 &middot; SmartDailyApps</p>
+  <main class="flex-1 max-w-4xl mx-auto px-6 py-12 w-full">
+    <p class="text-xs uppercase tracking-[0.2em] text-cyan font-bold mb-3">Legal</p>
+    <h1 class="font-heading text-3xl md:text-4xl font-extrabold mb-2">Terms of Use</h1>
+    <p class="text-sm text-muted mb-8">Effective date: April 1, 2026</p>
 
-    <div class="space-y-8 text-sm text-gray-300 leading-relaxed">
-
-      <section>
-        <h2 class="text-base font-bold text-white mb-3">1. Acceptance of Terms</h2>
-        <p>By downloading, installing, or using the MyGoldFolio application ("the App") or visiting smartdailyapps.com ("the Site"), you agree to be bound by these Terms of Use. If you do not agree, do not use the App or the Site.</p>
+    <div class="space-y-5 text-sm text-gray-300 leading-relaxed">
+      <section class="rounded-xl border border-line/60 bg-panel/70 p-5">
+        <h2 class="font-semibold text-white mb-2">1. Acceptance</h2>
+        <p>By using SmartDailyApps products or websites, you agree to these terms. If you do not agree, do not use our services.</p>
       </section>
-
-      <section>
-        <h2 class="text-base font-bold text-white mb-3">2. License Grant</h2>
-        <p>SmartDailyApps grants you a limited, personal, non-commercial, non-transferable, non-exclusive, revocable licence to install and use the App on your personal Android device solely for your own personal tracking purposes. This licence does not include the right to sublicense, sell, resell, transfer, assign, or commercially exploit the App in any way.</p>
+      <section class="rounded-xl border border-line/60 bg-panel/70 p-5">
+        <h2 class="font-semibold text-white mb-2">2. License</h2>
+        <p>We grant a limited, non-exclusive, revocable license to use our apps for personal, non-commercial use unless explicitly agreed otherwise.</p>
       </section>
-
-      <section>
-        <h2 class="text-base font-bold text-white mb-3">3. Prohibited Use</h2>
-        <p class="mb-2">You must not:</p>
-        <ul class="space-y-1.5 pl-4">
-          <li class="relative before:content-['•'] before:absolute before:left-[-1rem] before:text-gold">Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App;</li>
-          <li class="relative before:content-['•'] before:absolute before:left-[-1rem] before:text-gold">Redistribute, sell, rent, or lease the App or any portion of it;</li>
-          <li class="relative before:content-['•'] before:absolute before:left-[-1rem] before:text-gold">Use the App for any commercial purpose without prior written consent;</li>
-          <li class="relative before:content-['•'] before:absolute before:left-[-1rem] before:text-gold">Remove or alter any proprietary notices or labels on the App;</li>
-          <li class="relative before:content-['•'] before:absolute before:left-[-1rem] before:text-gold">Use the App in any manner that violates applicable law.</li>
-        </ul>
+      <section class="rounded-xl border border-line/60 bg-panel/70 p-5">
+        <h2 class="font-semibold text-white mb-2">3. Prohibited Use</h2>
+        <p>You may not reverse engineer, redistribute, or misuse our apps and websites in ways that violate law or these terms.</p>
       </section>
-
-      <section>
-        <h2 class="text-base font-bold text-white mb-3">4. No Financial Advice</h2>
-        <p>The App is a personal portfolio tracking tool. Nothing in the App or on the Site constitutes financial, investment, tax, or legal advice. All information is provided for informational purposes only. You are solely responsible for any investment decisions you make. See our <a href="/disclaimer/" class="text-gold hover:underline">Investment Disclaimer</a> for full details.</p>
+      <section class="rounded-xl border border-line/60 bg-panel/70 p-5">
+        <h2 class="font-semibold text-white mb-2">4. No Financial Advice</h2>
+        <p>Product outputs are informational and not financial, tax, or legal advice. You remain responsible for your own decisions.</p>
       </section>
-
-      <section>
-        <h2 class="text-base font-bold text-white mb-3">5. Disclaimer of Warranties</h2>
-        <p>The App and the Site are provided "as is" and "as available" without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, accuracy, or non-infringement. SmartDailyApps does not warrant that the App will be error-free, uninterrupted, or that price data will be accurate or current.</p>
+      <section class="rounded-xl border border-line/60 bg-panel/70 p-5">
+        <h2 class="font-semibold text-white mb-2">5. Warranty & Liability</h2>
+        <p>Services are provided “as is” and “as available.” To the extent allowed by law, SmartDailyApps is not liable for indirect or consequential damages.</p>
       </section>
-
-      <section>
-        <h2 class="text-base font-bold text-white mb-3">6. Limitation of Liability</h2>
-        <p>To the fullest extent permitted by law, SmartDailyApps shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or goodwill, arising out of or in connection with your use of the App or the Site, even if advised of the possibility of such damages. SmartDailyApps's total liability for any claim arising under these Terms shall not exceed the amount you paid for the App (which is zero, as the App is free).</p>
+      <section class="rounded-xl border border-line/60 bg-panel/70 p-5">
+        <h2 class="font-semibold text-white mb-2">6. Updates</h2>
+        <p>We may update these terms from time to time. Continued use after changes means acceptance of the updated terms.</p>
       </section>
-
-      <section>
-        <h2 class="text-base font-bold text-white mb-3">7. Your Data</h2>
-        <p>All data you enter into the App is stored exclusively on your device. SmartDailyApps does not collect, transmit, or have access to your personal data or portfolio information. For full details see our <a href="https://mygoldfolio.de/privacy/" class="text-gold hover:underline">Privacy Policy</a>.</p>
+      <section class="rounded-xl border border-line/60 bg-panel/70 p-5">
+        <h2 class="font-semibold text-white mb-2">7. Contact</h2>
+        <p>For legal questions, contact <a href="mailto:info@smartdailyapps.com" class="text-cyan hover:underline">info@smartdailyapps.com</a>.</p>
       </section>
-
-      <section>
-        <h2 class="text-base font-bold text-white mb-3">8. Modifications</h2>
-        <p>SmartDailyApps reserves the right to modify these Terms at any time. Continued use of the App after changes are posted constitutes acceptance of the revised Terms. The effective date at the top of this page will be updated on any change.</p>
-      </section>
-
-      <section>
-        <h2 class="text-base font-bold text-white mb-3">9. Termination</h2>
-        <p>These Terms remain in effect until terminated. Your rights under these Terms terminate automatically if you fail to comply with any provision. On termination, you must cease all use of the App and delete all copies in your possession.</p>
-      </section>
-
-      <section>
-        <h2 class="text-base font-bold text-white mb-3">10. Governing Law</h2>
-        <p>These Terms are governed by the laws of England and Wales. Any disputes shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
-      </section>
-
-      <section>
-        <h2 class="text-base font-bold text-white mb-3">11. Contact</h2>
-        <p>Questions about these Terms? Contact us at <a href="mailto:info@smartdailyapps.com" class="text-gold hover:underline">info@smartdailyapps.com</a>.</p>
-      </section>
-
     </div>
   </main>
 
-  <footer class="border-t border-border/20 py-8 px-6 text-center text-xs text-muted mt-12">
-    <p>&copy; 2026 SmartDailyApps &middot; <a href="https://mygoldfolio.de/privacy/" class="text-gold hover:underline">Privacy Policy</a> &middot; <a href="/disclaimer/" class="text-gold hover:underline">Disclaimer</a> &middot; <a href="/cookie-policy/" class="text-gold hover:underline">Cookie Policy</a></p>
+  <footer class="border-t border-line/50 py-8 px-6 text-xs text-muted">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>&copy; 2026 Smart<span class="bg-gradient-to-r from-[#c6b6ff] via-[#8f73ff] to-[#6a4dff] bg-clip-text text-transparent">Daily</span>Apps</p>
+      <div class="flex items-center gap-4">
+        <a href="/disclaimer/" class="hover:text-cyan transition">Disclaimer</a>
+        <a href="/cookie-policy/" class="hover:text-cyan transition">Cookies</a>
+        <a href="/contact/" class="hover:text-cyan transition">Contact</a>
+      </div>
+    </div>
   </footer>
+
+  <script src="/images/locale-switcher.js"></script>
 </body>
 </html>

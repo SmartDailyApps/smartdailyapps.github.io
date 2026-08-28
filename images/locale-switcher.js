@@ -85,16 +85,16 @@
   wrap.style.display = 'inline-flex';
   wrap.style.alignItems = 'center';
   wrap.style.gap = '8px';
-  wrap.style.background = 'rgba(12, 16, 34, 0.9)';
-  wrap.style.border = '1px solid rgba(120, 140, 200, 0.35)';
+  wrap.style.background = 'rgba(14, 19, 40, 0.95)';
+  wrap.style.border = '1px solid rgba(123, 91, 255, 0.4)';
   wrap.style.borderRadius = '999px';
-  wrap.style.padding = '8px 12px';
+  wrap.style.padding = '8px 14px';
+  wrap.style.boxShadow = '0 4px 14px rgba(0,0,0,0.2)';
 
-  var label = document.createElement('span');
-  label.textContent = 'Lang';
-  label.style.fontSize = '12px';
-  label.style.opacity = '0.9';
-  label.style.fontFamily = 'Inter, sans-serif';
+  var label = document.createElement('ion-icon');
+  label.setAttribute('name', 'globe-outline');
+  label.style.fontSize = '15px';
+  label.style.color = '#A991FF';
 
   var select = document.createElement('select');
   select.setAttribute('aria-label', 'Language');
@@ -102,8 +102,8 @@
   select.style.color = '#E8EDFF';
   select.style.border = '0';
   select.style.outline = 'none';
-  select.style.fontSize = '12px';
-  select.style.fontWeight = '700';
+  select.style.fontSize = '13px';
+  select.style.fontWeight = '600';
   select.style.cursor = 'pointer';
 
   for (var j = 0; j < SUPPORTED.length; j += 1) {
